@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Meals | Habo-Lijo
+    </title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html"
+                class="logo">
+
+                <img
+                    src="images/logo.png"
+                    alt="Habo-Lijo">
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="meals.html">Meals</a>
+
+                <a href="cakes.html">
+                    Cakes & Desserts
+                </a>
+
+                <a href="catering.html">
+                    Catering
+                </a>
+
+      
+                <a href="order.html">
+                    Order
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="menu-toggle">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- PAGE HERO -->
+
+    <section
+        class="hero"
+        style="
+        min-height:60vh;
+        background:
+        linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)),
+        url('images/meals/hero-meal.jpg');
+        background-size:cover;
+        background-position:center;
+        ">
+
+        <div class="hero-content">
+
+            <h1>
+
+                Premium Meals
+
+            </h1>
+
+            <p>
+
+                Freshly prepared meals,
+                platters and signature dishes
+                crafted with quality ingredients.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CATEGORY FILTER -->
+
+    <section>
+
+        <div class="container">
+
+            <p class="section-subtitle">
+
+                Browse Menu
+
+            </p>
+
+            <h2 class="section-title">
+
+                Our Meals
+
+            </h2>
+
+            <div class="meal-filter">
+
+                <button
+                    class="filter-btn active"
+                    data-category="all">
+
+                    All
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="chicken">
+
+                    Chicken
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="platters">
+
+                    Platters
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="burgers">
+
+                    Burgers
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="specials">
+
+                    Specials
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MEALS GRID -->
+
+    <section>
+
+        <div class="container">
+
+            <div
+                class="card-grid"
+                id="meal-container">
+
+                <!-- Meal 1 -->
+
+                <div
+                    class="card meal-card"
+                    data-category="chicken">
+
+                    <img
+                        src="images/meals/chicken_and_burger.jpg"
+                        class="card-image"
+                        alt="Chicken">
+
+                    <div class="card-content">
+
+                        <h3>
+                            Chicken wings and burger
+                        </h3>
+
+                        <p>
+
+                            Grilled chicken wings 
+                            and a delicious beef/ chicken burger served with
+                            chips.
+
+                        </p>
+
+                        <span class="price">
+
+                            M120
+
+                        </span>
+
+                        <button
+                            class="btn btn-primary add-cart">
+
+                            Add To Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Meal 2 -->
+
+                <div
+                    class="card meal-card"
+                    data-category="platters">
+
+                    <img
+                        src="images/meals/platter.jpg"
+                        class="card-image"
+                        alt="Platter">
+
+                    <div class="card-content">
+
+                        <h3>
+
+                            Mixed Grill Platter
+
+                        </h3>
+
+                        <p>
+
+                            A premium selection
+                            of grilled meats for
+                            sharing.
+
+                        </p>
+
+                        <span class="price">
+
+                            from M250
+
+                        </span>
+
+                        <button
+                            class="btn btn-primary add-cart">
+
+                            Add To Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Meal 3 -->
+
+                <div
+                    class="card meal-card"
+                    data-category="burgers">
+
+                    <img
+                        src="images/meals/burger.jpg"
+                        class="card-image"
+                        alt="Burger">
+
+                    <div class="card-content">
+
+                        <h3>
+
+                            Gourmet Burger
+
+                        </h3>
+
+                        <p>
+
+                            Loaded burger served
+                            with fries and sauces.
+
+                        </p>
+
+                        <span class="price">
+
+                            M95
+
+                        </span>
+
+                        <button
+                            class="btn btn-primary add-cart">
+
+                            Add To Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Meal 4 -->
+
+                <div
+                    class="card meal-card"
+                    data-category="specials">
+
+                    <img
+                        src="images/meals/special.jpg"
+                        class="card-image"
+                        alt="Special">
+
+                    <div class="card-content">
+
+                        <h3>
+
+                            Family Feast Box
+
+                        </h3>
+
+                        <p>
+
+                            Designed for families
+                            and group gatherings.
+
+                        </p>
+
+                        <span class="price">
+
+                            from M450
+
+                        </span>
+
+                        <button
+                            class="btn btn-primary add-cart">
+
+                            Add To Cart
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- DUPLICATE THIS CARD
+                     FOR FUTURE ITEMS -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section>
+
+        <div class="container">
+
+            <div
+                style="
+                text-align:center;
+                max-width:800px;
+                margin:auto;
+                ">
+
+                <p class="section-subtitle">
+
+                    Ready To Order?
+
+                </p>
+
+                <h2 class="section-title">
+
+                    Freshly Prepared For You
+
+                </h2>
+
+                <p>
+
+                    Place an order today
+                    and enjoy handcrafted meals
+                    made with passion.
+
+                </p>
+
+                <br>
+
+                <a
+                    href="order.html"
+                    class="btn btn-primary">
+
+                    Place Order
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- FLOATING MENU BUTTON -->
+
+<a
+href="assets/menu.pdf"
+download
+class="floating-menu">
+
+    <i class="fa-solid fa-file-arrow-down"></i>
+
+    <span>Menu</span>
+
+</a>
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>
+
+                        HABO-LIJO
+
+                    </h3>
+
+                    <p>
+
+                        All Things Food.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>
+
+                        Quick Links
+
+                    </h3>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="cakes.html">
+                        Cakes
+                    </a>
+                    <a href="catering.html">
+                        Catering                
+                    </a>
+                </div>
+
+                <div>
+
+                    <h3>
+
+                        Contact
+
+                    </h3>
+
+                    <p>
+                        +266 63 000 793
+                    </p>
+
+                    <p>
+                        info@habolijo.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                © 2026 Habo-Lijo
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/meals.js"></script>
+
+</body>
+
+</html>

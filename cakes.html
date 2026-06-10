@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Meals | Habo-Lijo
+    </title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html"
+                class="logo">
+
+                <img
+                    src="images/logo.png"
+                    alt="Habo-Lijo">
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="meals.html">Meals</a>
+
+                <a href="cakes.html">
+                    Cakes & Desserts
+                </a>
+
+                <a href="catering.html">
+                    Catering
+                </a>
+
+              
+                <a href="order.html">
+                    Order
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="menu-toggle">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+<!-- HERO -->
+
+<section class="hero"
+style="
+min-height:60vh;
+background:
+linear-gradient(
+rgba(0,0,0,.6),
+rgba(0,0,0,.6)),
+url('images/cakes/cake-hero.jpg');
+background-size:cover;
+background-position:center;
+">
+
+    <div class="hero-content">
+
+        <h1>
+            Cakes & Desserts
+        </h1>
+
+        <p>
+
+            Beautiful custom cakes,
+            cupcakes and desserts
+            designed for every celebration.
+
+        </p>
+
+    </div>
+
+    
+<section>
+
+    <div class="container">
+
+        <p class="section-subtitle">
+
+            Browse Categories
+
+        </p>
+
+        <h2 class="section-title">
+
+            Something For Every Occasion
+
+        </h2>
+
+        <div class="cake-categories">
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-cake-candles"></i>
+
+                <h3>Birthday Cakes</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <h3>Wedding Cakes</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>Celebration Cakes</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-cookie"></i>
+
+                <h3>Cupcakes</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-gift"></i>
+
+                <h3>Dessert Boxes</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <div class="card-grid">
+
+               <!-- Cake -->
+
+            <div class="card">
+
+                <img
+                src="images/cakes/b.jpg"
+                class="card-image">
+
+                <div class="card-content">
+
+                    <h3>
+                         Deluxe Buscuits
+                    </h3>
+
+                    <p>
+
+                        Divine fresh biscuits with a variety of flavours for every occasion.
+
+                             
+
+                    </p>
+
+                    <span class="price">
+
+                        From M250
+
+                    </span>
+
+                </div>
+
+            </div>
+            <!-- Cake -->
+
+            <div class="card">
+
+                <img
+                src="images/cakes/grad-cake.jpg"
+                class="card-image">
+
+                <div class="card-content">
+
+                    <h3>
+                        Celebration Cake
+                    </h3>
+
+                    <p>
+
+                        Fully customized design
+                        for birthdays and events.
+
+                    </p>
+
+                    <span class="price">
+
+                        From M450
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Cake -->
+
+            <div class="card">
+
+                <img
+                src="images/cakes/cupcakes.jpg"
+                class="card-image">
+
+                <div class="card-content">
+
+                    <h3>
+                        Luxury Cupcakes
+                    </h3>
+
+                    <p>
+
+                        Elegant cupcakes
+                        with premium decoration.
+
+                    </p>
+
+                    <span class="price">
+
+                        From M250
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Duplicate for more cakes -->
+
+        </div>
+
+    </div>
+
+</section> 
+
+<section class="custom-cake">
+
+    <div class="container">
+
+        <div class="custom-order-box">
+
+            <p class="section-subtitle">
+
+                Custom Orders
+
+            </p>
+
+            <h2 class="section-title">
+
+                Design Your Dream Cake
+
+            </h2>
+
+            <p>
+
+                Tell us exactly what you're
+                looking for and we'll create
+                something special for your event.
+
+            </p>
+
+            <form id="customCakeForm">
+
+                <div class="form-group">
+
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Phone Number"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <input
+                    type="date"
+                    class="form-control"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <select
+                    class="form-control">
+
+                        <option>
+                            Select Cake Type
+                        </option>
+
+                        <option>
+                            Birthday Cake
+                        </option>
+
+                        <option>
+                            Wedding Cake
+                        </option>
+
+                        <option>
+                            Celebration Cake
+                        </option>
+
+                        <option>
+                            Cupcakes
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <textarea
+                    class="form-control"
+                    placeholder="
+Describe your design,
+colors, theme, size and
+serving requirements"></textarea>
+
+                </div>
+
+                <button
+                class="btn btn-primary">
+
+                    Request Quote
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FLOATING MENU BUTTON -->
+
+<a
+href="assets/menu.pdf"
+download
+class="floating-menu">
+
+    <i class="fa-solid fa-file-arrow-down"></i>
+
+    <span>Menu</span>
+
+</a>
+
+</section>
+   <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>
+
+                        HABO-LIJO
+
+                    </h3>
+
+                    <p>
+
+                        All Things Food.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>
+
+                        Quick Links
+
+                    </h3>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                  
+                    <a href="meals.html">
+                        Meals
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <h3>
+
+                        Contact
+
+                    </h3>
+
+                    <p>
+                        +266 63 000 793
+                    </p>
+
+                    <p>
+                        info@habolijo.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                © 2026 Habo-Lijo
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cakes.js"></script>
+
+</body>
+
+</html>

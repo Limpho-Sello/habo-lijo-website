@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Order | Habo-Lijo
+    </title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html"
+                class="logo">
+
+                <img
+                    src="images/logo.png"
+                    alt="Habo-Lijo">
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="meals.html">Meals</a>
+
+                <a href="cakes.html">Cakes & Desserts</a>
+
+                <a href="catering.html">Catering</a>
+
+                <a href="order.html">Order</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <div class="menu-toggle">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section
+        class="hero"
+        style="
+        min-height:50vh;
+        background:
+        linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)),
+        url('images/meals/order-hero.jpg');
+        background-size:cover;
+        background-position:center;
+        ">
+
+        <div class="hero-content">
+
+            <h1>
+                Place Your Order
+            </h1>
+
+            <p>
+                Complete your order details
+                and send directly to Habo-Lijo.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ORDER SECTION -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="order-grid">
+
+                <!-- CART -->
+
+                <div class="cart-box">
+
+                    <h2>
+                        Your Order
+                    </h2>
+
+                    <div id="cart-items">
+
+                        <p>
+                            No items added yet.
+                        </p>
+
+                    </div>
+
+                    <div class="cart-total">
+
+                        Total:
+                        <span id="total-price">
+                            M0
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- FORM -->
+
+                <div class="checkout-box">
+
+                    <h2>
+                        Customer Details
+                    </h2>
+
+                    <form id="orderForm">
+
+                        <div class="form-group">
+
+                            <input
+                                type="text"
+                                id="name"
+                                class="form-control"
+                                placeholder="Full Name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                class="form-control"
+                                placeholder="Phone Number"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control"
+                                placeholder="Email Address">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <select
+                                id="delivery"
+                                class="form-control">
+
+                                <option>
+                                    Collection
+                                </option>
+
+                                <option>
+                                    Delivery
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <textarea
+                                id="notes"
+                                class="form-control"
+                                placeholder="Additional Notes"></textarea>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Send Order
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DOWNLOAD MENU -->
+
+    <a
+        href="assets/menu.pdf"
+        download
+        class="floating-menu">
+
+        <i class="fa-solid fa-file-arrow-down"></i>
+
+        <span>
+            Menu
+        </span>
+
+    </a>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 Habo-Lijo
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/order.js"></script>
+
+</body>
+
+</html>

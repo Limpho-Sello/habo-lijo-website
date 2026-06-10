@@ -1,0 +1,954 @@
+/* ====================================
+   HABO-LIJO MASTER STYLESHEET
+==================================== */
+
+/* GOOGLE FONTS
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+*/
+
+
+/* ==========================
+   VARIABLES
+========================== */
+
+:root{
+
+    --gold:#B17A4A;
+    --gold-dark:#8E623B;
+
+    --cream:#F8F6F3;
+
+    --white:#FFFFFF;
+
+    --black:#181818;
+
+    --text:#4B4B4B;
+
+    --shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--cream);
+
+    color:var(--black);
+
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+}
+
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+}
+
+
+/* ==========================
+   SECTION SPACING
+========================== */
+
+section{
+
+    padding:100px 0;
+}
+
+
+/* ==========================
+   HEADINGS
+========================== */
+
+.section-subtitle{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:.9rem;
+
+    margin-bottom:15px;
+}
+
+.section-title{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+}
+
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s ease;
+}
+
+.btn-primary{
+
+    background:var(--gold);
+
+    color:white;
+}
+
+.btn-primary:hover{
+
+    background:var(--gold-dark);
+
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+
+    border:1px solid var(--gold);
+
+    color:var(--gold);
+}
+
+.btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:white;
+}
+
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:90px;
+
+    background:
+    rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    z-index:9999;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.05);
+}
+
+.nav-container{
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+}
+
+.logo img{
+
+    height:70px;
+
+    width:auto;
+}
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+}
+
+.nav-links a{
+
+    color:var(--black);
+
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+
+    color:var(--gold);
+}
+
+
+/* ==========================
+   MOBILE MENU
+========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:1.5rem;
+
+    color:var(--black);
+
+    cursor:pointer;
+}
+
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
+    url('../images/hero.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+}
+
+.hero-content{
+
+    max-width:850px;
+}
+
+.hero-logo{
+
+    width:500px;
+
+    max-width:100%;
+
+    margin:0 auto 30px;
+}
+
+.hero h1{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:5.5rem;
+
+    line-height:1;
+
+    margin-bottom:25px;
+}
+
+.hero p{
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+
+/* ==========================
+   FEATURES
+========================== */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.feature-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+}
+
+.feature-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto auto 20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    rgba(177,122,74,.1);
+
+    color:var(--gold);
+
+    font-size:1.8rem;
+}
+
+.feature-card h3{
+
+    margin-bottom:15px;
+}
+
+.feature-card p{
+
+    color:var(--text);
+
+    line-height:1.8;
+}
+
+
+/* ==========================
+   CARDS
+========================== */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+}
+
+.card-image{
+
+    height:260px;
+
+    object-fit:cover;
+}
+
+.card-content{
+
+    padding:25px;
+}
+
+.card-content h3{
+
+    margin-bottom:10px;
+}
+
+.card-content p{
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+}
+
+.price{
+
+    display:block;
+
+    color:var(--gold);
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+
+/* ==========================
+   ABOUT PREVIEW
+========================== */
+
+.about-preview{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+}
+
+.about-preview img{
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+}
+
+
+.mobile-active{
+
+    position:absolute;
+
+    top:90px;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    display:flex !important;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px;
+
+    gap:25px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+    background:var(--black);
+
+    color:white;
+
+    padding:70px 0 30px;
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:40px;
+}
+
+.footer h3{
+
+    margin-bottom:20px;
+
+    color:var(--gold);
+}
+
+.footer a{
+
+    color:#ddd;
+
+    display:block;
+
+    margin-bottom:12px;
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    border-top:
+    1px solid rgba(255,255,255,.1);
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    color:#999;
+}
+
+
+/* ==========================
+   ORDER FORM
+========================== */
+
+.form-group{
+
+    margin-bottom:20px;
+}
+
+.form-control{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-family:inherit;
+}
+
+textarea.form-control{
+
+    min-height:140px;
+
+    resize:none;
+}
+
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery-grid{
+
+    columns:4 250px;
+
+    gap:20px;
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+    border-radius:20px;
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .section-title{
+        font-size:3rem;
+    }
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+    .about-preview{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .hero-logo{
+        width:320px;
+    }
+
+    section{
+        padding:80px 0;
+    }
+
+}
+
+/* ==========================
+   ANIMATIONS
+========================== */
+
+.feature-card,
+.card,
+.about-preview{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:
+    opacity .8s ease,
+    transform .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================
+   CAKE CATEGORIES
+========================== */
+
+.cake-categories{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+.category-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+}
+
+.category-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.category-card i{
+
+    font-size:2rem;
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+}
+
+
+/* ==========================
+   CUSTOM ORDER
+========================== */
+
+.custom-order-box{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+}
+
+h3{
+  color:var(--gold);
+}
+
+/* ==========================
+   FLOATING MENU BUTTON
+========================== */
+
+.floating-menu{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    z-index:999;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px 22px;
+
+    border-radius:50px;
+
+    background:var(--gold);
+
+    color:white;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.floating-menu:hover{
+
+    background:var(--gold-dark);
+
+    transform:translateY(-3px);
+}
+
+.floating-menu i{
+
+    font-size:1.1rem;
+}
+
+/* ==========================
+   ORDER PAGE
+========================== */
+
+.order-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:40px;
+}
+
+.cart-box,
+.checkout-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+}
+
+.cart-box h2,
+.checkout-box h2{
+
+    margin-bottom:25px;
+}
+
+.cart-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+    padding-bottom:15px;
+
+    border-bottom:1px solid #eee;
+}
+
+.cart-total{
+
+    margin-top:25px;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    color:var(--gold);
+}
+
+@media(max-width:900px){
+
+    .order-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:50px;
+
+    align-items:start;
+}
+
+.contact-info,
+.contact-form-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+}
+
+.contact-item{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:25px;
+}
+
+.contact-item i{
+
+    color:var(--gold);
+
+    font-size:1.3rem;
+
+    margin-top:5px;
+}
+
+.contact-item h3{
+
+    margin-bottom:5px;
+}
+
+@media(max-width:900px){
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}
